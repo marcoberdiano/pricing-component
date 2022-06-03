@@ -28,8 +28,6 @@ function App() {
         <Secondary planPrice={plan} plan='Master'/>
       </main>
       <footer class="footer">
-        Challenge by <a className='link' href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a className='link' href="https://www.frontendmentor.io/profile/marcoberdiano"><span className='author'>Marco</span></a>.
       </footer>
     </div>
   );
