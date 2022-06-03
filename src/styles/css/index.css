@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 29px;
+  background-image: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  border-radius: 20px;
+}
+.switch .input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch .input:checked + .slider::before {
+  transform: translateX(19px);
+}
+.switch .input:checked + .slider {
+  background-image: linear-gradient(to right, hsla(235deg, 63%, 84%, 0.618), rgb(162, 165, 231));
+}
+.switch .slider {
+  border-radius: 20px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.switch .slider::before {
+  border-radius: 20px;
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 4px;
+  bottom: 3px;
+  background-color: hsl(240deg, 78%, 98%);
+  transition: 0.4s;
+}
+
+.btn {
+  width: 100%;
+  padding: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: hsl(240deg, 78%, 98%);
+}
+.primary .txt-btn {
+  background: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.primary:hover {
+  border: 1px solid hsl(240deg, 78%, 98%);
+  background-image: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+}
+.primary:hover .txt-btn {
+  background: hsl(240deg, 78%, 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondary {
+  background-image: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  color: hsl(240deg, 78%, 98%);
+}
+.secondary:hover {
+  background: hsl(240deg, 78%, 98%);
+  border: 1px solid hsl(232deg, 13%, 33%);
+}
+.secondary:hover .txt-btn {
+  background: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 15px;
+  width: 20em;
+}
+.card-container .card-head .card-head-title {
+  color: hsl(233deg, 13%, 49%);
+  font-size: 1.2em;
+}
+.card-container .card-head .card-price-container {
+  margin: 2em 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(232deg, 13%, 33%);
+}
+.card-container .card-head .card-price-container .dolar {
+  font-size: 2em;
+}
+.card-container .card-head .card-price-container .card-price {
+  font-size: 3.5em;
+}
+.card-container .card-body .card-specs {
+  border-top: 1px solid hsl(234deg, 14%, 74%);
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+.card-container .card-body .card-specs .specs {
+  padding: 1em 0em;
+  color: hsl(233deg, 13%, 49%);
+}
+.card-container .card-body .card-specs .specs:nth-child(1), .card-container .card-body .card-specs .specs:nth-child(2) {
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+.card-container .card-footer {
+  margin-top: 2em;
+}
+
+.card-container-primary {
+  padding: 2em 1em;
+  background-image: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+}
+.card-container-primary .card-head .card-head-title {
+  color: hsl(240deg, 78%, 98%);
+}
+.card-container-primary .card-head .card-price-container {
+  color: hsl(240deg, 78%, 98%);
+}
+.card-container-primary .card-body .card-specs .specs {
+  color: hsl(240deg, 78%, 98%);
+}
+
+.header-container {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 2em;
+}
+.header-container .switch-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-container {
+  padding-top: 2em;
+  height: 100vh;
+}
+.app-container .main-container {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .app-container .main-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("../../images/bg-top.svg"), url("../../images/bg-bottom.svg"), hsl(240deg, 78%, 98%);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+}
+
+/*# sourceMappingURL=index.css.map */

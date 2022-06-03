@@ -1,0 +1,45 @@
+.btn {
+    width: 100%;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: $VeryLightGrayishBlue;
+    
+    .txt-btn {
+        background: $LinearGradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover {
+        border: 1px solid $VeryLightGrayishBlue;
+        background-image: $LinearGradient;
+        .txt-btn {
+            background: $VeryLightGrayishBlue;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.secondary {
+    background-image: $LinearGradient;
+    color: $VeryLightGrayishBlue;
+
+    &:hover {
+        background: $VeryLightGrayishBlue;
+        border: 1px solid $DarkGrayishBlue;
+        .txt-btn {
+            background: $LinearGradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

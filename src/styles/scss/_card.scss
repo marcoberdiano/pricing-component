@@ -1,0 +1,64 @@
+@import './button'; 
+
+.card-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 15px;
+    width: 20em;
+    .card-head {
+        .card-head-title {
+            color: $GrayishBlue;
+            font-size: 1.2em;
+        }
+        .card-price-container{
+            margin: 2em 0em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $DarkGrayishBlue;
+            .dolar {
+                font-size: 2em;
+            }
+            .card-price{
+                font-size: 3.5em;
+            }
+        }
+    }
+    .card-body {
+        .card-specs {
+            border-top:1px solid $LightGrayishBlue;
+            border-bottom:1px solid $LightGrayishBlue;
+            .specs {
+                padding: 1em 0em;
+                color: $GrayishBlue;
+            }
+            .specs:nth-child(1), .specs:nth-child(2) {
+                border-bottom:1px solid $LightGrayishBlue;
+            }
+        }
+    }
+    .card-footer {
+        margin-top: 2em;
+    }
+}
+
+.card-container-primary {
+    padding: 2em 1em;
+    background-image: $LinearGradient;
+    .card-head {
+        .card-head-title {
+            color: $VeryLightGrayishBlue;
+        }
+        .card-price-container{
+            color: $VeryLightGrayishBlue;
+        }
+    }
+    .card-body {
+        .card-specs {
+            .specs{
+                color: $VeryLightGrayishBlue;
+            }
+        }        
+    }
+}
