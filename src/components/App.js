@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="app-container">
       <header className='header-container'>
-            <h1>Our Pricing</h1>
+            <h1 className='title'>Our Pricing</h1>
             <div className='switch-container'>
                 <p>Annually</p>
                 <Switch onClick={handlePlan}/>

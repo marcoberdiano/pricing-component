@@ -41,7 +41,8 @@
 
 .btn {
   width: 100%;
-  padding: 1em;
+  padding: 20px 10px;
+  margin: 20px 0px;
   text-transform: uppercase;
   letter-spacing: 2px;
   border: none;
@@ -52,6 +53,7 @@
 
 .primary {
   background-color: hsl(240deg, 78%, 98%);
+  border: 1px solid hsl(240deg, 78%, 98%);
 }
 .primary .txt-btn {
   background: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
@@ -70,6 +72,7 @@
 
 .secondary {
   background-image: linear-gradient(to right, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  border: 1px solid transparent;
   color: hsl(240deg, 78%, 98%);
 }
 .secondary:hover {
@@ -140,8 +143,10 @@
   place-content: center;
   text-align: center;
   gap: 2em;
+  color: hsl(232deg, 13%, 33%);
 }
 .header-container .switch-container {
+  color: hsl(233deg, 13%, 49%);
   display: flex;
   align-items: center;
   gap: 20px;
