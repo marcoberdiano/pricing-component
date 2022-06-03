@@ -158,8 +158,11 @@
   align-items: center;
 }
 .app-container .footer {
+  position: absolute;
   font-size: 12px;
   color: hsl(234deg, 14%, 74%);
+  bottom: 0;
+  right: 0;
 }
 .app-container .footer .link {
   color: hsl(232deg, 13%, 33%);

@@ -14,9 +14,11 @@
     } 
 
     .footer {
+        position: absolute;
         font-size: 12px;
         color: $LightGrayishBlue;
-
+        bottom: 0;
+        right: 0;
         .link {
             color: $DarkGrayishBlue;
 
