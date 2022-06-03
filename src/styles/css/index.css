@@ -157,6 +157,16 @@
   justify-content: center;
   align-items: center;
 }
+.app-container .footer {
+  font-size: 12px;
+  color: hsl(234deg, 14%, 74%);
+}
+.app-container .footer .link {
+  color: hsl(232deg, 13%, 33%);
+}
+.app-container .footer .link .author {
+  color: hsl(232deg, 13%, 33%);
+}
 
 @media only screen and (max-width: 700px) {
   .app-container .main-container {

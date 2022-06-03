@@ -12,6 +12,19 @@
         justify-content: center;
         align-items: center;  
     } 
+
+    .footer {
+        font-size: 12px;
+        color: $LightGrayishBlue;
+
+        .link {
+            color: $DarkGrayishBlue;
+
+            .author {
+                color: $DarkGrayishBlue;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
